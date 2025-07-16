@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -56,7 +56,7 @@
     .product-card button {
       background-color: #ff4d6d;
       color: white;
-      border: none;
+      border: black;
       padding: 0.5rem 1rem;
       margin-top: 0.5rem;
       border-radius: 5px;
@@ -86,7 +86,7 @@
 <body>
   <header>
 
-    <img src="/images/Jival Gift Shop.png" height="50" width="50" id="logo"/>
+    <img src="/images/Jival Gift Shop.png" height="70" width="100" id="logo"/>
     <h1>Jival Gift Shop 🎁</h1>
     <nav>
       <a href="#">Home</a>
@@ -98,37 +98,42 @@
   <main>
     <section class="product-grid">
       <div class="product-card">
-        <img src="/images/mitalimug.jpg" alt="gift 1" />
+        <img src="/images/rose teddy combo.webp" alt="gift 1" />
         <h3>Rose Teddy Combo</h3>
-        <p>₹499</p>
+        <p> Price:₹<span id="price">799</span></p>
+        <p class="price">Discounted Price:₹<span id="discounted-price">499</span></p>
         <button onclick="addToCart('Rose Teddy Combo', 499)">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Gift 2" />
+        <img src="images/chocolate hamper.webp" alt="Gift 2" />
         <h3>Chocolate Hamper</h3>
-        <p>₹699</p>
+        <p> Price:₹<span id="price">899</span></p>
+        <p class="price">Discounted Price:₹<span id="discounted-price">699</span></p>
         <button onclick="addToCart('Chocolate Hamper', 699)">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Gift 3" />
+        <img src="images/mitalimug.jpg" alt="Gift 3" />
         <h3>Custom Mug Set</h3>
-        <p>₹299</p>
+         <p> Price:₹<span id="price">599</span></p>
+        <p class="price">Discounted Price:₹<span id="discounted-price">399</span></p>
         <button onclick="addToCart('Custom Mug Set', 299)">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Gift 4" />
+        <img src="images/photo fram set.jpg" alt="Gift 4" />
         <h3>Photo Frame Set</h3>
-        <p>₹399</p>
+        <p> Price:₹<span id="price">999</span></p>
+        <p class="price">Discounted Price:₹<span id="discounted-price">799</span></p>
         <button onclick="addToCart('Photo Frame Set', 399)">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Gift 5" />
+        <img src="images/birthday decoretion kit.jpg" alt="Gift 5" />
         <h3>Birthday Decoration Kit</h3>
-        <p>₹599</p>
+        <p> Price:₹<span id="price">799</span></p>
+        <p class="price">Discounted Price:₹<span id="discounted-price">499</span></p>
         <button onclick="addToCart('Birthday Decoration Kit', 599)">Add to Cart</button>
       </div>
     </section>
@@ -136,6 +141,9 @@
     <!-- Checkout Button -->
     <button class="checkout-btn" onclick="checkout()">Checkout</button>
   </main>
+  <video>
+  <a href="images/shop now.mp4">direct link</a>.
+</video>
 
   <footer>
     <p>&copy; 2025 Jival Gift Shop. All rights reserved.</p>
